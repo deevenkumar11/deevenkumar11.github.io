@@ -6,52 +6,55 @@
     <title>Registration Form</title>
 </head>
 <body>
-    <center> <!-- Centering the form using the <center> tag -->
-        <h1><u>🌟 Registration Form 🌟</u></h1> <!-- Made the title more attractive using Unicode symbols -->
-        <form action="/submit_form" method="post">
-            <fieldset style="border: none;"> <!-- Removed the border -->
-                <legend><b>Personal Information</b></legend>
-                
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="fname" required><br><br>
-
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname" required><br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required><br><br>
-
-                <label for="confirm_password">Confirm Password:</label>
-                <input type="password" id="confirm_password" name="confirm_password" required><br><br>
-
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br><br>
-
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob"><br><br>
-            </fieldset>
-
-            <fieldset style="border: none;"> <!-- Removed the border -->
-                <legend><b>Gender</b></legend>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label><br><br>
-            </fieldset>
-
-            <fieldset style="border: none;"> <!-- Removed the border -->
-                <legend><b>Address</b></legend>
-                <label for="address">Address:</label><br>
-                <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
-            </fieldset>
-
-            <button type="submit">Register</button>
-        </form>
+    <center>
+        <h1>Registration Form</h1> <!-- Centered and clean title -->
     </center>
+
+    <form action="/submit_form" method="post">
+        <fieldset style="border: none;">
+            <legend><b>Personal Information</b></legend>
+            
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+        </fieldset>
+
+        <fieldset style="border: none;">
+            <legend><b>Gender</b></legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+        </fieldset>
+
+        <fieldset style="border: none;">
+            <legend><b>Address</b></legend>
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <center>
+            <button type="submit">Register</button> <!-- Centered button -->
+        </center>
+    </form>
 </body>
 </html>
