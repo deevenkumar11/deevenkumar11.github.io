@@ -3,161 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deeven kumar - Resume</title>
+    <title>Deeven Kumar K - Professional Resume</title>
     <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
+        /* Modern CSS Reset */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            box-sizing: border-box;
+        }
+
+        /* Typography */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
         }
 
-        .container {
-            border: 2px solid #007BFF;
-            width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        h1, h2, h3, h4 {
-            margin: 0;
-            color: #007BFF;
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5em;
         }
 
         h1 {
-            text-align: center;
             font-size: 2.5rem;
-            margin-bottom: 20px;
+            font-weight: 700;
         }
 
         h2 {
             font-size: 1.8rem;
-            margin-top: 20px;
-            border-bottom: 2px solid #007BFF;
-            padding-bottom: 5px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.3rem;
+            margin-top: 1.5rem;
         }
 
         h3 {
-            font-size: 1.4rem;
-            margin-top: 15px;
-        }
-
-        h4 {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            color: #333;
+            font-size: 1.3rem;
+            margin-top: 1rem;
         }
 
         p {
-            margin: 5px 0;
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 850px;
+            margin: 2rem auto;
+            padding: 2.5rem;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #2980b9;
+        }
+
+        .contact-info i {
             font-size: 1.1rem;
         }
 
-        a {
-            color: #007BFF;
-            text-decoration: none;
-            font-weight: bold;
+        .section {
+            margin-bottom: 1.8rem;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            list-style: none;
         }
 
-        ul, ol {
-            margin: 10px 0;
-            padding-left: 20px;
+        .skills-list li {
+            background: #e8f4fc;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
         }
 
-        li {
-            margin-bottom: 5px;
+        .project, .education-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dashed #eee;
         }
 
-        .contact-info p {
-            margin: 5px 0;
+        .project:last-child, .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .project-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
         }
 
         .highlight {
-            color: #007BFF;
-            font-weight: bold;
+            background-color: #fffde7;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.8rem;
+            }
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
-        <h1>Deeven kumar.K</h1>
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Deeven Kumar K</h1>
+            <p>Computer Science Student & Web Developer</p>
+            
+            <div class="contact-info">
+                <a href="mailto:deevenkumar.kaamisetti@sasi.ac.in">
+                    <i class="fas fa-envelope"></i> deevenkumar.kaamisetti@sasi.ac.in
+                </a>
+                <a href="tel:9346412800">
+                    <i class="fas fa-phone"></i> 9346412800
+                </a>
+                <a href="https://github.com/deevenkumar11" target="_blank">
+                    <i class="fab fa-github"></i> github.com/deevenkumar11
+                </a>
+            </div>
+        </header>
 
-        <!-- Personal Details -->
-        <section>
-            <h2>Personal Details</h2>
-            <p><strong>Name:</strong> Kaamisetti Deevenkumar</p>
-            <p><strong>Age:</strong> 20</p>
-            <p><strong>Education:</strong> B.Tech 2<sup>nd</sup> Year</p>
+        <!-- Summary Section -->
+        <section class="section">
+            <h2>Professional Summary</h2>
+            <p>Motivated Computer Science Engineering student with a passion for web development and problem-solving. Currently pursuing B.Tech with hands-on experience in building web applications using modern technologies. Strong foundation in front-end development and eager to learn new frameworks and tools.</p>
         </section>
 
-        <!-- Contact Information -->
-        <section>
-            <h2>Contact Information</h2>
-            <p><strong>Email:</strong> <a href="mailto:deevenkumar.kaamisetti@sasi.ac.in">deevenkumar.kaamisetti@sasi.ac.in</a></p>
-            <p><strong>Phone:</strong> <a href="tel:9346412800">9346412800</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/deevenkumar11/deevenkumar11.github.io/tree/main" target="_blank">github.com/deevenkumar11</a></p>
-        </section>
-
-        <!-- Skills -->
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Web Development</li>
-                <li>HTML</li>
-                <li>CSS</li>
+        <!-- Skills Section -->
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
                 <li>JavaScript</li>
-                <li>Problem Solving</li>
+                <li>Responsive Design</li>
                 <li>Git & GitHub</li>
+                <li>Problem Solving</li>
+                <li>Web Accessibility</li>
+                <li>Bootstrap</li>
             </ul>
         </section>
 
-        <!-- Education -->
-        <section>
+        <!-- Education Section -->
+        <section class="section">
             <h2>Education</h2>
-            <p><strong>B.Tech in Computer Science Engineering</strong></p>
-            <p><i>SASI Institute of Technology and Engineering, Tadepalligudem</i></p>
-            <p>Currently in 2<sup>nd</sup> Year</p>
+            <div class="education-item">
+                <div class="project-title">
+                    <h3>B.Tech in Computer Science Engineering</h3>
+                    <span class="date">Expected 2025</span>
+                </div>
+                <p>SASI Institute of Technology and Engineering, Tadepalligudem</p>
+                <p>Currently in 2<sup>nd</sup> Year with focus on software development and computer science fundamentals</p>
+            </div>
         </section>
 
-        <!-- Projects -->
-        <section>
+        <!-- Projects Section -->
+        <section class="section">
             <h2>Projects</h2>
-            <h3>Portfolio Website</h3>
-            <p>Developed a personal portfolio website to showcase my skills and projects. Built using <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, and <span class="highlight">JavaScript</span>.</p>
-            <h3><E-Commerce></E-Commerce></h3>
-            <p>An e-commerce platform built with React and Node.js, featuring user authentication and payment integration <span class="highlight">JavaScript</span> and <span class="highlight">API integration</span>.</p>
+            
+            <div class="project">
+                <div class="project-title">
+                    <h3>E-Commerce Platform</h3>
+                    <span class="date">2023</span>
+                </div>
+                <ul>
+                    <li>Developed a functional e-commerce website with product listings, shopping cart, and checkout functionality</li>
+                    <li>Implemented user authentication system and product management features</li>
+                    <li>Technologies used: <span class="highlight">HTML5</span>, <span class="highlight">CSS3</span>, <span class="highlight">JavaScript</span>, and <span class="highlight">Firebase</span> for backend services</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <div class="project-title">
+                    <h3>Personal Portfolio Website</h3>
+                    <span class="date">2022</span>
+                </div>
+                <ul>
+                    <li>Designed and developed a responsive portfolio website to showcase projects and skills</li>
+                    <li>Implemented smooth animations and interactive elements to enhance user experience</li>
+                    <li>Optimized for performance and mobile devices using <span class="highlight">CSS Flexbox</span> and <span class="highlight">Media Queries</span></li>
+                </ul>
+            </div>
         </section>
 
-        <!-- Optional: Add Certifications, Hobbies, or Achievements -->
+        <!-- Additional Sections (Uncomment to use) -->
         <!--
-        <section>
+        <section class="section">
             <h2>Certifications</h2>
-            <ul>
-                <li>Responsive Web Design - FreeCodeCamp</li>
-                <li>JavaScript Algorithms and Data Structures - FreeCodeCamp</li>
-            </ul>
+            <div class="project">
+                <h3>Responsive Web Design Certification</h3>
+                <p>FreeCodeCamp | 2022</p>
+            </div>
+            <div class="project">
+                <h3>JavaScript Algorithms and Data Structures</h3>
+                <p>FreeCodeCamp | 2022</p>
+            </div>
         </section>
 
-        <section>
-            <h2>Hobbies</h2>
+        <section class="section">
+            <h2>Achievements</h2>
             <ul>
-                <li>Listening to Music</li>
-                <li>Playing Cricket</li>
-                <li>Reading Tech Blogs</li>
+                <li>Participated in Smart India Hackathon 2022</li>
+                <li>Completed 30-day JavaScript coding challenge</li>
             </ul>
         </section>
         -->
     </div>
 </body>
 </html>
+     
